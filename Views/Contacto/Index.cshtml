@@ -1,0 +1,66 @@
+@model progra.Controllers.Contacto
+@{
+    ViewData["Title"] = "Registro";
+}
+<h1>Registro</h1>
+
+<form asp-controller="Contacto" asp-action="Registrar" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" type="text" class="form-control" required />
+    </div>
+
+   <div class="form-group mb-3">
+        <label asp-for="Edad"></label>
+        <input asp-for="Edad" type="number" class="form-control" required />
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Género</label><br />
+        <div class="form-check form-check-inline">
+            <input asp-for="Genero" type="radio" id="Masculino" class="form-check-input" value="Masculino" />
+            <label class="form-check-label" for="Masculino">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input asp-for="Genero" id="Femenino" type="radio" class="form-check-input" value="Femenino" />
+            <label class="form-check-label" for="Femenino">Femenino</label>
+        </div>
+    </div>
+
+     <div class="form-group mb-3">
+        <label asp-for="Fecha"></label>
+        <input asp-for="Fecha" type="date" class="form-control" required />
+    </div>
+
+     <div class="form-group mb-3">
+        <label asp-for="Dir"></label>
+        <input asp-for="Dir" type="text" class="form-control" required />
+    </div>
+
+     <div class="form-group mb-3">
+        <label asp-for="Dist"></label>
+        <select asp-for="Dist" class="form-control" required>
+            <option value="Miraflores">Miraflores</option>
+            <option value="San Borja">San Borja</option>
+            <option value="La Molina">La Molina</option>
+            <option value="Lima">Lima</option>
+        </select>
+    </div>
+
+     <div class="form-group mb-3">
+        <label>Membresía</label><br />
+        <div class="form-check form-check-inline">
+            <input asp-for="Membresia" id="Basica" type="radio" class="form-check-input" value="Básico" />
+            <label class="form-check-label" for="Basica">Básica (500)</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input asp-for="Membresia" type="radio" id="Premium" class="form-check-input" value="Premium" />
+            <label class="form-check-label" for="Premium">Premium (1000)</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+
+</form>
+
+<h1>@ViewData["MsgRpta"]</h1>
