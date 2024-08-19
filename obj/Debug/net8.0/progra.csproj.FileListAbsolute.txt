@@ -28,3 +28,4 @@ C:\Users\sebas\Desktop\progra\obj\Debug\net8.0\refint\progra.dll
 C:\Users\sebas\Desktop\progra\obj\Debug\net8.0\progra.pdb
 C:\Users\sebas\Desktop\progra\obj\Debug\net8.0\progra.genruntimeconfig.cache
 C:\Users\sebas\Desktop\progra\obj\Debug\net8.0\ref\progra.dll
+C:\Users\sebas\Desktop\progra\obj\Debug\net8.0\progra.sourcelink.json
